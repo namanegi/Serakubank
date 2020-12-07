@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './main.css';
 import App from './App';
-import NavApp from './App';
-import HeaderApp from './App';
+import NavApp from './navapp';
+import HeaderApp from './headerapp';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
