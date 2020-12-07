@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>セラク銀行</title>
+<link href="./main.css" rel="stylesheet" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.10.3/babel.min.js"></script>
+<script src="./main.js" type="text/babel"></script>
+
+</head>
+
+<body>
+    <header id="top">
+        <div id="logo"><img src="./logo.png"></div>
+        <div id="code">金融機関コード：0917</div>
+        <div id="mojisize">文字サイズ：</div>
+        <div class="ch-moji-size"><img src="./fontsize_s.png"></div>
+        <div class="ch-moji-size"><img src="./fontsize_m.png"></div>
+        <div class="ch-moji-size"><img src="./fontsize_l.png"></div>
+        <div id="map">
+            <ul>
+                <li><a href="">global site</a></li>
+                <li><a href="">site map</a></li>
+            </ul>
+        </div>
+        <div id="search-bar">
+            <form action="cgi-bin/example.cgi" method="post">
+                <input type="search" name="search" id="search-input" placeholder="検索ワードを入力">
+                <input type="image" src="./search.png" name="submit" id="search-button">
+            </form>
+        </div>
+    </header>
+    <div id="nav-bar"></div>
+    hello world!
+    <div id="root"></div>
+
+</body>
+</html>
