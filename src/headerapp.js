@@ -16,8 +16,8 @@ function HeaderApp() {
                 </div>
                 <div id="search-bar">
                     <form action="" method="post">
-                        <input type="search" name="search" id="search-input" placeholder="検索ワードを入力"></input>
-                        <input type="image" src="./search.png" name="submit" id="search-button"></input>
+                        <input type="search" name="search" id="search-input" placeholder="検索ワードを入力" />
+                        <input type="image" src="./search.png" name="submit" id="search-button" />
                     </form>
                 </div>
             </header>
