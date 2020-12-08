@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './main.css';
 import App from './App';
-import NavApp from './navapp';
 import HeaderApp from './headerapp';
 import reportWebVitals from './reportWebVitals';
 
@@ -10,6 +9,23 @@ ReactDOM.render(
   <HeaderApp />,
   document.getElementById('headerroot')
 );
+
+class NavApp extends React.Component {
+  render() {
+    return (
+      <div id="navapp">
+        <div class="nav-btn" id="nav1">
+            <h2>menu1</h2>
+            
+        </div>
+        <div class="nav-btn" id="nav2"><h2>menu2</h2></div>
+        <div class="nav-btn" id="nav3"><h2>menu3</h2></div>
+        <div class="nav-btn" id="nav4"><h2>menu4</h2></div>
+        <div class="nav-btn" id="nav5"><h2>menu5</h2></div>
+      </div>
+    )
+  }
+}
 
 ReactDOM.render(
   <NavApp />,
