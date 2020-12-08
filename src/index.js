@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './main.css';
-import App from './App';
 import HeaderApp from './headerapp';
 import reportWebVitals from './reportWebVitals';
 
@@ -135,6 +134,85 @@ class MainApp extends React.Component {
     )
   }
 }
+
+class FootApp extends React.Component {
+  render() {
+    return (
+      <div id="footer">
+        <div id="ftext">
+        <ul id="f1">
+            <h1>個人のお客様</h1>
+                    <li>普通預金</li>
+                    <li>定期預金・積立</li>
+                    <li>外貨預金</li>
+                    <li>外債</li>
+                    <li>ファンドラップ</li>
+                    <li>個人向け国債</li>
+                    <li>退職金運用のご案内</li>
+        </ul>
+
+        <ul id="f2">
+            <h1>法人のお客様</h1>
+                    <li>資金調達</li>
+                    <li>国際業務・為替取引</li>
+                    <li>福利厚生</li>
+                    <li>事業戦略・経営相談</li>
+                    <li>振込み・入金確認の効率化</li>
+                    <li>電子記録債権・手形関連</li>
+        </ul>
+
+        <ul id="f3">
+            <h1>株主・投資家の皆様</h1>
+                    <li>せらくグループの概要</li>
+                    <li>決算広告</li>
+                    <li>社債情報</li>
+        </ul>
+
+        <ul id="f4">
+            <h1>採用情報</h1>
+                    <li>新卒採用</li>
+                    <li>キャリア採用</li>
+                    <li>海外現地採用</li>
+                    <li>契約社員のお仕事</li>
+                    <li>派遣社員のお仕事</li>
+        </ul>
+
+        <ul id="f5">
+            <h1>せらく銀行について</h1>
+
+                    <li>ご挨拶</li>
+                    <li>事業内容</li>
+                    <li>企業の社会的責任</li>
+                    <li>役員一覧</li>
+                    <li>組織体制</li>
+                    <li>お問い合わせ先</li>
+        </ul>
+    </div>
+    <div id="hai">
+        <div id="fmoji">
+            <p id="fa">|</p>
+            <p id="fu1">お客様の個人情報所得について</p>
+            <p id="fb">|</p>
+            <p id="fu2">金融商品勧誘方針</p>
+            <p id="fc">|</p>
+            <p id="fu3">法人等のお客様の情報について</p>
+            <p id="fd">|</p>
+            <p id="fu4">本サイトのご利用に当たって</p>
+            <p id="fe">|</p>
+            <p id="fu5">反社会的勢力に対する基本方針</p>
+            <p id="ff">|</p>
+        </div>
+    </div>
+    <p id="copyright">
+        <small>Copyright(c)2020 Seraku Banking Corporation. ALL rights reserved.</small>
+    </p>
+      </div>
+    )
+  }
+}
+
+
+
 ReactDOM.render(
   <NavApp />,
   document.getElementById('navroot')
@@ -152,11 +230,10 @@ ReactDOM.render(
   document.getElementById('mainroot')
 );
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <FootApp />,
+  document.getElementById('footroot')
 );
+
 
 
 // If you want to start measuring performance in your app, pass a function
