@@ -245,7 +245,112 @@ header ul li {
     position: relative;
     width: 700px;
     height: 1000px;
-    background-color: cornsilk;
+}
+#boxes {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.mainbox {
+    float: left;
+    margin: 20px 5px 10px 5px;
+    width: 340px;
+    height: 140px;
+}
+.boxtitle {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border-bottom: turquoise 2px solid;
+}
+.boxblock {
+    float: left;
+    height: 100%;
+    width: 16px;
+    background-color: turquoise;
+}
+.boxtitle h1 {
+    display: inline-block;
+    color: rgba(38,45,123);
+    font-size: 100%;
+    font-weight: bolder;
+    margin-left: 14px;
+    margin-top: 8px;
+}
+.boxcon ul {
+    margin: 0;
+    padding: 0;
+}
+.boxcon ul li {
+    font-size: 70%;
+    color: rgba(38,45,123);
+    display: inline-block;
+    width: 150px;
+    margin: 0;
+    margin-left: 10px;
+    padding: 5px;
+}
+#newslist {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+#genres {
+    width: 100%;
+    border-bottom: rgba(38,45,123,1) 2px solid;
+}
+.genre {
+    display: inline-block;
+    width: 24.5%;
+    background-color: rgb(0, 0, 0,0.3);
+    margin: 0 0.5% 0 0;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+#genre4 {
+    margin: 0;
+    width: 25%;
+}
+.genre-focus {
+    background-color: rgba(38,45,123,1);
+}
+.newscons {
+    margin-top: 20px;
+    width: 100%;
+}
+.newscon {
+    width: 100%;
+    display: inline-block;
+    height: 60px;
+}
+.newscon h4 {
+    display: inline-block;
+    color: black;
+    font-size: 13px;
+    width: 15%;
+    margin: 20px 0;
+    font-weight: normal;
+}
+.newscon h5 {
+    font-size: 10px;
+    display: inline-block;
+    color: black;
+    width: 11%;
+    margin: 0;
+    text-align: center;
+    margin: 0 2%;
+}
+.newslink {
+    display: inline-flex;
+    width: 70%;
+    margin: 0;
+    font-size: 16px;
+    height: 60px;
 }
 
 

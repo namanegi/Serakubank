@@ -4,10 +4,8 @@ import './main.css';
 import HeaderApp from './headerapp';
 import reportWebVitals from './reportWebVitals';
 
-var data = {
-  "test": "hello world",
-  "check": "It's ok"
-}
+var menudata = require('./menudata.json');
+var newsdata = require('./news.json');
 
 ReactDOM.render(
   <HeaderApp />,
@@ -18,14 +16,14 @@ class NavApp extends React.Component {
   render() {
     return (
       <div id="navapp">
-        <div class="nav-btn" id="nav1">
+        <div className="nav-btn" id="nav1">
             <h2>個人のお客様</h2>
             
         </div>
-        <div class="nav-btn" id="nav2"><h2>法人のお客様</h2></div>
-        <div class="nav-btn" id="nav3"><h2>株主・投資家の皆様</h2></div>
-        <div class="nav-btn" id="nav4"><h2>採用情報</h2></div>
-        <div class="nav-btn" id="nav5"><h2>せらく銀行について</h2></div>
+        <div className="nav-btn" id="nav2"><h2>法人のお客様</h2></div>
+        <div className="nav-btn" id="nav3"><h2>株主・投資家の皆様</h2></div>
+        <div className="nav-btn" id="nav4"><h2>採用情報</h2></div>
+        <div className="nav-btn" id="nav5"><h2>せらく銀行について</h2></div>
       </div>
     )
   }
@@ -62,7 +60,7 @@ class SlideApp extends React.Component {
 
   showImg(i) {
     return (
-      <img class="slideimg" src={this.imageUrl[i]} alt="" />
+      <img className="slideimg" src={this.imageUrl[i]} alt="" />
     )
   }
 
@@ -71,7 +69,7 @@ class SlideApp extends React.Component {
       <div id="slideshow">
         <img
           src="./arrow_left.png" 
-          class="slidearrow" 
+          className="slidearrow" 
           id="arrowL" 
           onClick={()=>{
             if (this.state.no === 1) {
@@ -89,7 +87,7 @@ class SlideApp extends React.Component {
         {this.showImg(this.state.no)}
         <img 
           src="./arrow_right.png" 
-          class="slidearrow" 
+          className="slidearrow" 
           id="arrowR" 
           onClick={()=>{
             if (this.state.no === 3) {
@@ -105,19 +103,19 @@ class SlideApp extends React.Component {
           alt="" 
         />
         <div id="thumbs">
-          <img class="thumb" src="./main01_thumb.png" alt="" onClick={()=>{
+          <img className="thumb" src="./main01_thumb.png" alt="" onClick={()=>{
             this.setState({
               no:1,
             })
           }}>
           </img>
-          <img class="thumb" src="./main02_thumb.png" alt="" onClick={()=>{
+          <img className="thumb" src="./main02_thumb.png" alt="" onClick={()=>{
             this.setState({
               no:2,
             })
           }}>
           </img>
-          <img class="thumb" src="./main03_thumb.png" alt="" onClick={()=>{this.setState({no:3,})}}></img>
+          <img className="thumb" src="./main03_thumb.png" alt="" onClick={()=>{this.setState({no:3,})}}></img>
         </div>
       </div>
     )
@@ -131,25 +129,25 @@ class SideApp extends React.Component {
         <div id="netbank">
           <h2>インターネットバンキング</h2>
           <p>セラク銀行インターネットバンキング</p>
-          <a class="abox" href="/login" id="tologin">ログインサービス</a>
-          <a class="abox" href="/signup" id="tosignup">初めてログインする方</a>
+          <a className="abox" href="/login" id="tologin">ログインサービス</a>
+          <a className="abox" href="/signup" id="tosignup">初めてログインする方</a>
           <a href="/forget" id="toforget">＞パスワードを忘れた方はこちら</a>
         </div>
         <div id="guide">
           <h2>サービスのご案内</h2>
             <div id="guidelist">
-              <div class="guidebox"><a href="/c1"><br/>店舗<br/>・<br/>ATM検索<br/></a></div>
-              <div class="guidebox"><a href="/c2"><br/><br/>資料請求<br/></a></div>
-              <div class="guidebox"><a href="/c3"><br/><br/>金利一覧</a></div>
-              <div class="guidebox"><a href="/c4"><br/><br/>手数料</a></div>
-              <div class="guidebox"><a href="/c5"><br class="half"/><br/>よくある<br/>ご質問</a></div>
-              <div class="guidebox"><a href="/c6"><br class="half"/><br/>投資信託基準<br/>価格一覧</a></div>
+              <div className="guidebox"><a href="/c1"><br/>店舗<br/>・<br/>ATM検索<br/></a></div>
+              <div className="guidebox"><a href="/c2"><br/><br/>資料請求<br/></a></div>
+              <div className="guidebox"><a href="/c3"><br/><br/>金利一覧</a></div>
+              <div className="guidebox"><a href="/c4"><br/><br/>手数料</a></div>
+              <div className="guidebox"><a href="/c5"><br className="half"/><br/>よくある<br/>ご質問</a></div>
+              <div className="guidebox"><a href="/c6"><br className="half"/><br/>投資信託基準<br/>価格一覧</a></div>
             </div>
-            <a class="abox" href="/acntguide" id="toacntguide">口座開設のご案内</a>
-            <a class="abox" href="/news" id="tonews">金融経済ニュース</a>
-            <a class="abox" href="/safety" id="tosafe">詐欺に注意！！</a>
-            <a class="abox" href="/cm" id="tocm">テレビCM・動画のご紹介</a>
-            <a class="abox" href="/loan" id="toloan">今から考える教育ローン</a>
+            <a className="abox" href="/acntguide" id="toacntguide">口座開設のご案内</a>
+            <a className="abox" href="/news" id="tonews">金融経済ニュース</a>
+            <a className="abox" href="/safety" id="tosafe">詐欺に注意！！</a>
+            <a className="abox" href="/cm" id="tocm">テレビCM・動画のご紹介</a>
+            <a className="abox" href="/loan" id="toloan">今から考える教育ローン</a>
             <a href="/caution" id="tocaution"><img src="./caution.png" id="cautionimg" alt=""></img></a>
         </div>
       </div>
@@ -157,80 +155,136 @@ class SideApp extends React.Component {
   }
 }
 
-class DataWriter extends React.Component {
-
+class TitleWriter extends React.Component {
   render() {
     return (
       <h1>
-        {data["test"]}
+        {menudata["Menu"+this.props.val].Title}
       </h1>
     )
+  }
+}
+class ContentWriter extends React.Component {
+  render() {
+    var list = [];
+    for (var j in menudata["Menu"+this.props.val].Contents) {
+      list.push(<li>{menudata["Menu"+this.props.val].Contents[j]}</li>);
+    };
+    return list
   }
 }
 
 class MainApp extends React.Component {
   render() {
+    var list = [];
+    for (var i=1;i<=4;i++) {
+      list.push(
+        <div className="mainbox">
+          <div className="boxtitle">
+            <div className="boxblock"></div>
+            <TitleWriter val={i} />
+          </div>
+          <div className="boxcon">
+            <ul>
+              <ContentWriter val={i} />
+            </ul>
+          </div>
+        </div>
+      )
+    };
     return (
       <div id="maincon">
-        <DataWriter />
+        <div id="boxes">
+        {list}
+        </div>
+        <NewsApp />
       </div>
     )
   }
 }
-
+class NewsApp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      val: "all",
+    }
+  }
+  checkFocus(i) {
+    if ((i === 1) && (this.state.val === "all")) {
+      return "genre genre-focus"
+    } else if ((i === 2) && (this.state.val === "news")) {
+      return "genre genre-focus"
+    } else if ((i === 3) && (this.state.val === "camp")) {
+      return "genre genre-focus"
+    } else if ((i === 4) && (this.state.val === "notice")){
+      return "genre genre-focus"
+    } else {
+      return "genre"
+    }
+  }
+  newsWriter() {
+    var list = [];
+    for (var i=1;i<=Object.keys(newsdata).length;i++) {
+      if ((this.state.val === "all") || (this.state.val === newsdata["news"+i].genre)) {
+        list.push(
+          <div className="newscon">
+            <h4>{newsdata["news"+i].time}</h4>
+            <h5>{newsdata["news"+i].genre}</h5>
+            <div className="newslink"><a href="/news">{newsdata["news"+i].content}</a></div>
+          </div>
+        )
+      }
+    };
+    return list
+  }
+  render() {
+    return (
+      <div id="newslist">
+        <div id="genres">
+          <div className={this.checkFocus(1)} id="genre1" onClick={()=>{
+            this.setState({
+              val: "all",
+            })
+          }}>新着情報</div>
+          <div className={this.checkFocus(2)} id="genre2" onClick={()=>{
+            this.setState({
+              val: "news",
+            })
+          }}>ニュースリリース</div>
+          <div className={this.checkFocus(3)} id="genre3" onClick={()=>{
+            this.setState({
+              val: "camp",
+            })
+          }}>キャンペーン</div>
+          <div className={this.checkFocus(4)} id="genre4" onClick={()=>{
+            this.setState({
+              val: "notice",
+            })
+          }}>お知らせ</div>
+        </div>
+        <div id="newscons">
+          {this.newsWriter()}
+        </div>
+      </div>
+    )
+  }
+}
 class FootApp extends React.Component {
   render() {
+    var list = [];
+    for (var i=1;i<=5;i++) {
+      list.push(
+        <ul id={"f"+i}>
+            <TitleWriter val={i} />
+            <ContentWriter val={i} /> 
+        </ul>
+      )
+    };
     return (
       <div id="footer">
         <div id="ftext">
-        <ul id="f1">
-            <h1>個人のお客様</h1>
-                    <li>普通預金</li>
-                    <li>定期預金・積立</li>
-                    <li>外貨預金</li>
-                    <li>外債</li>
-                    <li>ファンドラップ</li>
-                    <li>個人向け国債</li>
-                    <li>退職金運用のご案内</li>
-        </ul>
-
-        <ul id="f2">
-            <h1>法人のお客様</h1>
-                    <li>資金調達</li>
-                    <li>国際業務・為替取引</li>
-                    <li>福利厚生</li>
-                    <li>事業戦略・経営相談</li>
-                    <li>振込み・入金確認の効率化</li>
-                    <li>電子記録債権・手形関連</li>
-        </ul>
-
-        <ul id="f3">
-            <h1>株主・投資家の皆様</h1>
-                    <li>せらくグループの概要</li>
-                    <li>決算広告</li>
-                    <li>社債情報</li>
-        </ul>
-
-        <ul id="f4">
-            <h1>採用情報</h1>
-                    <li>新卒採用</li>
-                    <li>キャリア採用</li>
-                    <li>海外現地採用</li>
-                    <li>契約社員のお仕事</li>
-                    <li>派遣社員のお仕事</li>
-        </ul>
-
-        <ul id="f5">
-            <h1>せらく銀行について</h1>
-
-                    <li>ご挨拶</li>
-                    <li>事業内容</li>
-                    <li>企業の社会的責任</li>
-                    <li>役員一覧</li>
-                    <li>組織体制</li>
-                    <li>お問い合わせ先</li>
-        </ul>
-    </div>
+          {list}
+        </div>
     <div id="hai">
         <div id="fmoji">
             <p id="fa">|</p>
