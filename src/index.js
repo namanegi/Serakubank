@@ -14,13 +14,13 @@ class NavApp extends React.Component {
     return (
       <div id="navapp">
         <div class="nav-btn" id="nav1">
-            <h2>menu1</h2>
+            <h2>個人のお客様</h2>
             
         </div>
-        <div class="nav-btn" id="nav2"><h2>menu2</h2></div>
-        <div class="nav-btn" id="nav3"><h2>menu3</h2></div>
-        <div class="nav-btn" id="nav4"><h2>menu4</h2></div>
-        <div class="nav-btn" id="nav5"><h2>menu5</h2></div>
+        <div class="nav-btn" id="nav2"><h2>法人のお客様</h2></div>
+        <div class="nav-btn" id="nav3"><h2>株主・投資家の皆様</h2></div>
+        <div class="nav-btn" id="nav4"><h2>採用情報</h2></div>
+        <div class="nav-btn" id="nav5"><h2>せらく銀行について</h2></div>
       </div>
     )
   }
@@ -122,7 +122,32 @@ class SlideApp extends React.Component {
 class SideApp extends React.Component {
   render() {
     return (
-      <div id="sidebar"></div>
+      <div id="sidebar">
+        <div id="netbank">
+          <h2>インターネットバンキング</h2>
+          <p>セラク銀行インターネットバンキング</p>
+          <a class="abox" href="/login" id="tologin">ログインサービス</a>
+          <a class="abox" href="/signup" id="tosignup">初めてログインする方</a>
+          <a href="/forget" id="toforget">＞パスワードを忘れた方はこちら</a>
+        </div>
+        <div id="guide">
+          <h2>サービスのご案内</h2>
+            <div id="guidelist">
+              <div class="guidebox"><a href="/c1"><br/>店舗<br/>・<br/>ATM検索<br/></a></div>
+              <div class="guidebox"><a href="/c2"><br/><br/>資料請求<br/></a></div>
+              <div class="guidebox"><a href="/c3"><br/><br/>金利一覧</a></div>
+              <div class="guidebox"><a href="/c4"><br/><br/>手数料</a></div>
+              <div class="guidebox"><a href="/c5"><br class="half"/><br/>よくある<br/>ご質問</a></div>
+              <div class="guidebox"><a href="/c6"><br class="half"/><br/>投資信託基準<br/>価格一覧</a></div>
+            </div>
+            <a class="abox" href="/acntguide" id="toacntguide">口座開設のご案内</a>
+            <a class="abox" href="/news" id="tonews">金融経済ニュース</a>
+            <a class="abox" href="/safety" id="tosafe">詐欺に注意！！</a>
+            <a class="abox" href="/cm" id="tocm">テレビCM・動画のご紹介</a>
+            <a class="abox" href="/loan" id="toloan">今から考える教育ローン</a>
+            <a href="/caution" id="tocaution"><img src="./caution.png" id="cautionimg" alt=""></img></a>
+        </div>
+      </div>
     )
   }
 }

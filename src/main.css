@@ -75,9 +75,13 @@ header ul li {
 }
 
 /*--------nav-------------*/
+#navroot {
+    height: auto;
+}
 #navapp {
+    display: inline-block;
     width: 100%;
-    height: 40px;
+    height: auto;
     background-color: rgba(38,45,123,1);
     position: relative;
 }
@@ -91,7 +95,7 @@ header ul li {
 .nav-btn h2 {
     text-align: center;
     color: aliceblue;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0;
 }
 #nav1 {
@@ -143,9 +147,99 @@ header ul li {
     margin-left: 0;
     position: relative;
     width: 300px;
-    height: 1000px;
-    background-color: blanchedalmond;
 }
+#netbank {
+    width: 250px;
+    height: auto;
+    margin: 25px;
+    text-align: center;
+}
+#sidebar h2 {
+    display: block;
+    color: rgba(38,45,123);
+    font-size: 100%;
+    font-weight: bolder;
+    margin: 10px;
+}
+#netbank p {
+    color: black;
+    font-size: small;
+    margin: 5px auto;
+}
+.abox {
+    display: inline-block;
+    width: 250px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 5px 0;
+    font-size: 80%;
+    color: seashell;
+    text-decoration: none;
+    background-color: rgba(38,45,123);
+}
+#tosignup {
+    background-color: #8fc31f;
+    margin-bottom: 0;
+}
+#toforget {
+    font-size: xx-small;
+}
+#guide {
+    text-align: center;
+    margin: 50px 0;
+    display: block;
+}
+#guidelist {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 300px;
+}
+.guidebox {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+#guidelist a {
+    display: inline-block;
+    margin: 5px;
+    padding: auto;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    background-color: rgba(38,45,123);
+    color: seashell;
+    font-size: 2rem;
+    text-decoration: none;
+    font-size: 12px;
+}
+.half {
+    display: block;
+    content: "";
+    height: 6px;
+}
+#toacntguide {
+    margin-top: 50px;
+}
+#tocm, #toloan {
+    background-color: #8fc31f;
+}
+#tocm {
+    margin-top: 50px;
+}
+#tocaution {
+    display: block;
+    margin: 50px 0;
+}
+#cautionimg {
+    width: 250px;
+}
+
+/*---------------main--------*/
 #maincon {
     float:  left;
     position: relative;
@@ -159,7 +253,6 @@ header ul li {
 /*----footer---*/
 #footer {
     width: 100%;
-    height: 250px;
     float: left;
     margin: 0;
     position: relative;
@@ -170,11 +263,12 @@ header ul li {
     width: 1000px;
     margin: auto;
 }
+
 #footer h1{
     font-size: 1rem;
 }
 #footer ul{
-    margin: 15px 5px 15px 25px;
+    margin: 5px 5px 15px 25px;
     padding: 10px;
     float: left;
     list-style: circle;
@@ -198,12 +292,12 @@ header ul li {
     margin: 5px;
     font-size: 10px;
 }
-#fmoji{
+#fmoji {
+    display: inline-flex;
     width: auto;
     height: auto;
     position: relative;
-    float: left;
-    margin: 0 50px 0 50px;
+    margin: 0 auto;
 }
 #fu1, #fu2, #fu3, #fu4, #fu5{
     float: left;
@@ -218,6 +312,5 @@ header ul li {
     width: 100%;
     margin: auto;
     clear: both;
-    margin-top: 30px;
     background-color: rgba(38,45,123);
 }
