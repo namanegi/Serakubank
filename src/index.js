@@ -4,6 +4,11 @@ import './main.css';
 import HeaderApp from './headerapp';
 import reportWebVitals from './reportWebVitals';
 
+var data = {
+  "test": "hello world",
+  "check": "It's ok"
+}
+
 ReactDOM.render(
   <HeaderApp />,
   document.getElementById('headerroot')
@@ -152,10 +157,23 @@ class SideApp extends React.Component {
   }
 }
 
+class DataWriter extends React.Component {
+
+  render() {
+    return (
+      <h1>
+        {data["test"]}
+      </h1>
+    )
+  }
+}
+
 class MainApp extends React.Component {
   render() {
     return (
-      <div id="maincon"></div>
+      <div id="maincon">
+        <DataWriter />
+      </div>
     )
   }
 }
