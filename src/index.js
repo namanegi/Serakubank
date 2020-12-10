@@ -103,7 +103,7 @@ class SlideApp extends React.Component {
           alt="" 
         />
         <div id="thumbs">
-          <img className="thumb" src="./main01_thumb.png" alt="" onClick={()=>{
+          <img className="thumb" id="thumb1" src="./main01_thumb.png" alt="" onClick={()=>{
             this.setState({
               no:1,
             })

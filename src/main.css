@@ -144,9 +144,12 @@ header ul li {
 }
 .thumb {
     position: relative;
-    width: 251px;
+    width: 296px;
     border: darkblue 1px double;
-    margin: 10px 40px 0 40px;
+    margin: 1px;
+}
+#thumb1 {
+    margin-left: 51px;
 }
 
 /*----------side-------*/
