@@ -3,7 +3,7 @@
 /*--------------for all--------------------------*/
 body {
 	color: #5f5039;
-	font-size: 18px;
+	font-size: 14px;
     line-height: 1.5;
     width: 1000px;
     margin: auto;
@@ -11,7 +11,7 @@ body {
 header, nav, footer {
     margin: auto;
     width: 1000px;
-    font-size: 12px;
+    font-size: 1em;
 }
 html{
     scroll-behavior: smooth;
@@ -44,8 +44,10 @@ html{
     float: left;
     top: 30px;
     position: relative;
+    font-size: 12px;
 }
 #mojisize {
+    font-size: 12px;
     text-align: center;
     width: 80px;
     height: 20px;
@@ -62,10 +64,11 @@ html{
 header ul li {
     text-align: center;
     width: 80px;
+    float: left;
     height: 15px;
     list-style: none;
-    float: left;
     overflow: hidden;
+    font-size: 12px;
 }
 #search-bar {
     height: 30px;
@@ -94,20 +97,24 @@ header ul li {
     position: relative;
 }
 .nav-btn {
+    display: inline-block;
     width: 19.9%;
     position: relative;
-    float: left;
-    padding: 6px 0 6px 0;
+    height: 3.4em;
+    padding: 0;
+    margin: 0;
     border-left: white 1px solid;
 }
+
 .nav-btn:hover {
     background-color:  rgb(54, 155, 158);
 }
 .nav-btn h1 {
     text-align: center;
     color: aliceblue;
-    font-size: 1rem;
+    font-size: 1.167em;
     margin: 0;
+    padding: 0.8em 0;
 }
 #nav1 {
     border: none;
@@ -117,7 +124,7 @@ header ul li {
     width: 100%;
     height: auto;
     position: absolute;
-    top: 36px;
+    top: 3.4em;
     background-color:rgb(54, 155, 158);
     display: none;
     z-index: 5;
@@ -178,13 +185,13 @@ header ul li {
 #sidebar h2 {
     display: block;
     color: rgba(38,45,123);
-    font-size: 100%;
+    font-size: 1.3em;
     font-weight: bolder;
     margin: 10px;
 }
 #netbank p {
     color: black;
-    font-size: small;
+    font-size: 0.8em;
     margin: 5px auto;
 }
 .abox {
@@ -193,7 +200,7 @@ header ul li {
     padding: 10px 0;
     text-align: center;
     margin: 5px 0;
-    font-size: 80%;
+    font-size: 0.9em;
     color: seashell;
     text-decoration: none;
     background-color: rgba(38,45,123);
@@ -203,7 +210,7 @@ header ul li {
     margin-bottom: 0;
 }
 #toforget {
-    font-size: xx-small;
+    font-size: 0.583em;
 }
 #guide {
     text-align: center;
@@ -235,7 +242,7 @@ header ul li {
     background-color: rgba(38,45,123);
     color: seashell;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 0.833em;
 }
 .half {
     display: block;
@@ -295,7 +302,7 @@ header ul li {
 .boxtitle h1 {
     display: inline-block;
     color: rgba(38,45,123);
-    font-size: 100%;
+    font-size: 1.167em;
     font-weight: bolder;
     margin-left: 14px;
     margin-top: 8px;
@@ -305,7 +312,7 @@ header ul li {
     padding: 0;
 }
 .boxcon ul li {
-    font-size: 12px;
+    font-size: 0.833em;
     color: rgba(38,45,123);
     display: inline-block;
     width: 145px;
@@ -378,7 +385,7 @@ header ul li {
     width: 68%;
     margin: 0;
     margin-left: 2%;
-    font-size: 16px;
+    font-size: 1em;
     height: 60px;
 }
 
@@ -399,7 +406,7 @@ header ul li {
 }
 
 #footer h1{
-    font-size: 1rem;
+    font-size: 1.2em;
 }
 #footer ul{
     margin: 5px 5px 15px 25px;
@@ -408,7 +415,7 @@ header ul li {
     list-style: circle;
     width: 150px;
     text-decoration: underline;
-    font-size: 0.8rem;
+    font-size: 0.9em;
     color: gainsboro;
 }
 

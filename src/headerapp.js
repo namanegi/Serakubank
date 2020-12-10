@@ -5,9 +5,9 @@ function HeaderApp() {
                 <div id="logo"><img id="logo-img" src="./logo.png" alt="" /></div>
                 <div id="code">金融機関コード：0917</div>
                 <div id="mojisize">文字サイズ：</div>
-                <div className="ch-moji-size"><img src="./fontsize_s.png" alt="" /></div>
-                <div className="ch-moji-size"><img src="./fontsize_m.png" alt="" /></div>
-                <div className="ch-moji-size"><img src="./fontsize_l.png" alt="" /></div>
+                <div className="ch-moji-size"><img id="js-small" src="./fontsize_s.png" alt="" /></div>
+                <div className="ch-moji-size"><img id="js-medium" src="./fontsize_m.png" alt="" /></div>
+                <div className="ch-moji-size"><img id="js-large" src="./fontsize_l.png" alt="" /></div>
                 <div id="map">
                     <ul>
                         <li><a href="/">global site</a></li>

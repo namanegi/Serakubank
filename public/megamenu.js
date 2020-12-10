@@ -13,4 +13,14 @@ $(function() {
         $(this).hide();
         $(this).prev().css('background-color',  'rgb(38,45,123)');
     });
+
+    $('#js-small').click(function() {
+        $('body').css("font-size", "14px");
+    });
+    $('#js-medium').click(function() {
+        $('body').css("font-size", "16px");
+    });
+    $('#js-large').click(function() {
+        $('body').css("font-size", "18px");
+    });
 })
