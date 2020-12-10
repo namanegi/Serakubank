@@ -1,6 +1,6 @@
 $(function() {
     $('.nav-btn').hover(function() {
-        $(this).next().slideDown();
+        $(this).next().slideDown(200);
         $(this).css('background-color', 'rgb(54, 155, 158)');
     }, function() {
         $(this).next().hide();
