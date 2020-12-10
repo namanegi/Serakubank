@@ -14,16 +14,29 @@ ReactDOM.render(
 
 class NavApp extends React.Component {
   render() {
+    var list = [];
+    for (var i=1;i<=5;i++) {
+      list.push(
+        <div
+          className="nav-btn"
+          id={"nav"+i}
+        >
+          <TitleWriter val={i} />
+        </div>
+      );
+      list.push(
+        <div
+          className="megamenu"
+        >
+          <ul>
+            <ContentWriter val={i} />
+          </ul>
+        </div>
+      );
+    }
     return (
       <div id="navapp">
-        <div className="nav-btn" id="nav1">
-            <h2>個人のお客様</h2>
-            
-        </div>
-        <div className="nav-btn" id="nav2"><h2>法人のお客様</h2></div>
-        <div className="nav-btn" id="nav3"><h2>株主・投資家の皆様</h2></div>
-        <div className="nav-btn" id="nav4"><h2>採用情報</h2></div>
-        <div className="nav-btn" id="nav5"><h2>せらく銀行について</h2></div>
+        {list}
       </div>
     )
   }
@@ -136,7 +149,7 @@ class SideApp extends React.Component {
         <div id="guide">
           <h2>サービスのご案内</h2>
             <div id="guidelist">
-              <div className="guidebox"><a href="/c1"><br/>店舗<br/>・<br/>ATM検索<br/></a></div>
+              <div className="guidebox"><a href="/c1"><br/>店舗<br/>・<br/>ATM検索</a></div>
               <div className="guidebox"><a href="/c2"><br/><br/>資料請求<br/></a></div>
               <div className="guidebox"><a href="/c3"><br/><br/>金利一覧</a></div>
               <div className="guidebox"><a href="/c4"><br/><br/>手数料</a></div>
