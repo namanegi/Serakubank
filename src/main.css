@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /*--------------for all--------------------------*/
 body {
 	color: #5f5039;
@@ -13,6 +15,12 @@ header, nav, footer {
 }
 html{
     scroll-behavior: smooth;
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
 }
 
 /*--------header-------*/
@@ -194,28 +202,27 @@ header ul li {
     padding: 0;
     margin: 0;
     text-align: center;
-    width: 300px;
+    width: 255px;
 }
 .guidebox {
     display: inline;
     margin: 0;
     padding: 0;
     float: left;
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 85px;
 }
 #guidelist a {
     display: inline-block;
-    margin: 5px;
+    margin: 2.5px;
     padding: auto;
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     text-align: center;
     background-color: rgba(38,45,123);
     color: seashell;
-    font-size: 2rem;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 11px;
 }
 .half {
     display: block;
@@ -243,7 +250,8 @@ header ul li {
 #maincon {
     float:  left;
     position: relative;
-    width: 700px;
+    width: 680px;
+    margin-left: 20px;
     height: 1000px;
 }
 #boxes {
@@ -255,7 +263,7 @@ header ul li {
 .mainbox {
     float: left;
     margin: 20px 5px 10px 5px;
-    width: 340px;
+    width: 330px;
     height: 140px;
 }
 .boxtitle {
@@ -284,10 +292,10 @@ header ul li {
     padding: 0;
 }
 .boxcon ul li {
-    font-size: 70%;
+    font-size: 12px;
     color: rgba(38,45,123);
     display: inline-block;
-    width: 150px;
+    width: 145px;
     margin: 0;
     margin-left: 10px;
     padding: 5px;
@@ -296,7 +304,7 @@ header ul li {
     display: inline-block;
     width: 100%;
     height: auto;
-    margin: 0;
+    margin: 10px 0 0 0;
 }
 #genres {
     width: 100%;
@@ -320,7 +328,6 @@ header ul li {
     background-color: rgba(38,45,123,1);
 }
 .newscons {
-    margin-top: 20px;
     width: 100%;
 }
 .newscon {
@@ -339,16 +346,25 @@ header ul li {
 .newscon h5 {
     font-size: 10px;
     display: inline-block;
-    color: black;
-    width: 11%;
-    margin: 0;
+    color: white;
+    width: 13%;
     text-align: center;
-    margin: 0 2%;
+    margin: 0 1%;
+}
+.news {
+    background-color: goldenrod;
+}
+.camp {
+    background-color: tomato;
+}
+.notice {
+    background-color: dodgerblue;
 }
 .newslink {
     display: inline-flex;
-    width: 70%;
+    width: 68%;
     margin: 0;
+    margin-left: 2%;
     font-size: 16px;
     height: 60px;
 }

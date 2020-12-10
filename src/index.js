@@ -222,6 +222,17 @@ class NewsApp extends React.Component {
       return "genre"
     }
   }
+  genreWriter(genre) {
+    if (genre === "news") {
+      return <h5 className="news">ニュースリリース</h5>
+    } else if (genre === "camp") {
+      return <h5 className="camp">キャンペーン</h5>
+    } else if (genre === "notice") {
+      return <h5 className="notice">お知らせ</h5>
+    } else {
+      return <h5>error</h5>
+    }
+  }
   newsWriter() {
     var list = [];
     for (var i=1;i<=Object.keys(newsdata).length;i++) {
@@ -229,7 +240,7 @@ class NewsApp extends React.Component {
         list.push(
           <div className="newscon">
             <h4>{newsdata["news"+i].time}</h4>
-            <h5>{newsdata["news"+i].genre}</h5>
+            {this.genreWriter(newsdata["news"+i].genre)}
             <div className="newslink"><a href="/news">{newsdata["news"+i].content}</a></div>
           </div>
         )
