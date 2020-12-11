@@ -20,6 +20,7 @@ class NavApp extends React.Component {
         <div
           className="nav-btn"
           id={"nav"+i}
+          key={"nav"+i}
         >
           <TitleWriter val={i} />
         </div>
@@ -27,10 +28,22 @@ class NavApp extends React.Component {
       list.push(
         <div
           className="megamenu"
+          key={"megamenu"+i}
+          id={"megamenu"+i}
         >
-          <ul>
+          <ul className="submega">
             <ContentWriter val={i} />
           </ul>
+          <div
+          className="megacon"
+          key={"megacon"+i}
+          >
+            <p>セラク銀行の普通預金（口座）に関する便利・おトクな使い方をご案内します。</p>
+            
+              <p>本支店ATMでは手数料0円でお引き出し可能。</p>
+              <p>セラク銀行あての振込はインターネットバンキングで手数料0円。インターネットバンキングはワンタイムパスワードで安全にお取引。</p>
+              <br /><br /><br /><br /><br /><br />
+          </div>
         </div>
       );
     }
@@ -181,7 +194,7 @@ class ContentWriter extends React.Component {
   render() {
     var list = [];
     for (var j in menudata["Menu"+this.props.val].Contents) {
-      list.push(<li>{menudata["Menu"+this.props.val].Contents[j]}</li>);
+      list.push(<li key={j} >{menudata["Menu"+this.props.val].Contents[j]}</li>);
     };
     return list
   }
@@ -192,8 +205,8 @@ class MainApp extends React.Component {
     var list = [];
     for (var i=1;i<=4;i++) {
       list.push(
-        <div className="mainbox">
-          <div className="boxtitle">
+        <div className="mainbox" key={"box"+i} id={"box"+i}>
+          <div className="boxtitle" >
             <div className="boxblock"></div>
             <TitleWriter val={i} />
           </div>
@@ -251,7 +264,7 @@ class NewsApp extends React.Component {
     for (var i=1;i<=Object.keys(newsdata).length;i++) {
       if ((this.state.val === "all") || (this.state.val === newsdata["news"+i].genre)) {
         list.push(
-          <div className="newscon">
+          <div className="newscon" key={"newscon"+i}>
             <h4>{newsdata["news"+i].time}</h4>
             {this.genreWriter(newsdata["news"+i].genre)}
             <div className="newslink"><a href="/news">{newsdata["news"+i].content}</a></div>
@@ -298,7 +311,7 @@ class FootApp extends React.Component {
     var list = [];
     for (var i=1;i<=5;i++) {
       list.push(
-        <ul id={"f"+i}>
+        <ul key={"f"+i} id={"f"+i}>
             <TitleWriter val={i} />
             <ContentWriter val={i} /> 
         </ul>
