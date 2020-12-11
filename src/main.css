@@ -131,9 +131,14 @@ header ul li {
     transition: 0.1s;
 }
 .submega {
-    display: inline-block;
+    display: inline-flex;
     width: 250px;
+    height: 300px;
     border-right: azure 2px solid;
+}
+.submega ul {
+    display: block;
+    width: 250px;
 }
 .submega li {
     display: block;
@@ -144,12 +149,13 @@ header ul li {
     background-color: rgb(38,45,123);
 }
 .megacon {
-    display: inline-block;
+    display: inline-flex;
     width: 600px;
     top: 0;
     background-color:rgb(38,45,123);
-    height: auto;
-    padding: 10px;
+    height: 280px;
+    padding: 0;
+    display: none;
 }
 /*---slide-------*/
 #slideshow {

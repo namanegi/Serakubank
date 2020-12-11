@@ -31,18 +31,21 @@ class NavApp extends React.Component {
           key={"megamenu"+i}
           id={"megamenu"+i}
         >
-          <ul className="submega">
+          <div className="submega">
+          <ul>
             <ContentWriter val={i} />
           </ul>
+          </div>
           <div
           className="megacon"
           key={"megacon"+i}
           >
-            <p>セラク銀行の普通預金（口座）に関する便利・おトクな使い方をご案内します。</p>
-            
-              <p>本支店ATMでは手数料0円でお引き出し可能。</p>
-              <p>セラク銀行あての振込はインターネットバンキングで手数料0円。インターネットバンキングはワンタイムパスワードで安全にお取引。</p>
-              <br /><br /><br /><br /><br /><br />
+            <p>セラク銀行の普通預金（口座）に関する便利・
+              おトクな使い方をご案内します。
+              本支店ATMでは手数料0円でお引き出し可能。
+              セラク銀行あての振込はインターネットバンキングで手数料0円。
+              インターネットバンキングはワンタイムパスワードで安全にお取引。
+              </p>
           </div>
         </div>
       );
@@ -89,8 +92,13 @@ class SlideApp extends React.Component {
       <img className="slideimg" src={this.imageUrl[i]} alt="" />
     )
   }
-
   render() {
+    var opa = {
+      1: 0.4,
+      2: 0.4,
+      3: 0.4
+    };
+    opa[this.state.no]=1;
     return (
       <div id="slideshow">
         <img
@@ -127,21 +135,32 @@ class SlideApp extends React.Component {
             }
           }}
           alt="" 
+          style={{opacity: opa[2] }}
         />
         <div id="thumbs">
           <img className="thumb" id="thumb1" src="./main01_thumb.png" alt="" onClick={()=>{
             this.setState({
               no:1,
             })
-          }}>
+          }}
+          style={{opacity: opa[1] }}
+          > 
           </img>
           <img className="thumb" src="./main02_thumb.png" alt="" onClick={()=>{
             this.setState({
               no:2,
             })
-          }}>
+          }}
+          style={{opacity: opa[2] }}
+          >
           </img>
-          <img className="thumb" src="./main03_thumb.png" alt="" onClick={()=>{this.setState({no:3,})}}></img>
+          <img 
+            className="thumb" 
+            src="./main03_thumb.png"
+            alt=""
+            onClick={()=>{this.setState({no:3,})}  }
+            style={{opacity: opa[3] }}
+          ></img>
         </div>
       </div>
     )
