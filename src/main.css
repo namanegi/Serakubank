@@ -22,67 +22,9 @@ html{
     Meiryo,
     sans-serif;
 }
-
-/*--------header-------*/
-#top {
-    margin: 15px 0 5px 0;
-    width: 1000px;
-    height: 60px;
-}
-#logo {
-    width: 500px;
-    float: left;
-    position: relative;
-}
-#logo-img {
-    height: 35px;
-}
-#code {
-    text-align: center;
-    width: 140px;
-    height: 30px;
-    float: left;
-    top: 30px;
-    position: relative;
-    font-size: 12px;
-}
-#mojisize {
-    font-size: 12px;
-    text-align: center;
-    width: 80px;
-    height: 20px;
-    float: left;
-    top: 30px;
-    position: relative;
-}
-.ch-moji-size {
-    float: left;
-    top: 25px;
-    position: relative;
-    margin: 0 3px 0 3px;
-}
-header ul li {
-    text-align: center;
-    width: 80px;
-    float: left;
-    height: 15px;
-    list-style: none;
-    overflow: hidden;
-    font-size: 12px;
-}
-#search-bar {
-    height: 30px;
-    width: 160px;
-    float: left;
-    position: relative;
-    top: 10px;
-    margin-left: 12px;
-}
-#search-input {
-    height: 30px;
-    width: 130px;
-    position: relative;
-    float: left;
+button {
+    cursor:pointer;
+    border: none;
 }
 
 /*--------nav-------------*/
@@ -134,28 +76,39 @@ header ul li {
     display: inline-flex;
     width: 250px;
     height: 300px;
+    margin: 0;
     border-right: azure 2px solid;
 }
 .submega ul {
     display: block;
     width: 250px;
+    margin: 0;
+    margin-top: 2px;
+    padding: 0;
 }
 .submega li {
     display: block;
-    padding: 10px 0;
+    padding: 10px 0 10px 2em;
     font-size: 1em;
 }
 .submega li:hover {
     background-color: rgb(38,45,123);
 }
 .megacon {
+    margin: 0;
+    margin-top: 2px;
     display: inline-flex;
-    width: 600px;
-    top: 0;
+    width: 748px;
+    top: 2px;
     background-color:rgb(38,45,123);
-    height: 280px;
+    height: 318px;
     padding: 0;
     display: none;
+}
+.megacon p {
+    font-size: 1em;
+    padding: 10px 0;
+    margin: 0;
 }
 /*---slide-------*/
 #slideshow {
@@ -222,6 +175,17 @@ header ul li {
     margin: 5px auto;
 }
 .abox {
+    display: inline-block;
+    width: 250px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: seashell;
+    text-decoration: none;
+    background-color: rgba(38,45,123);
+}
+.bbox {
     display: inline-block;
     width: 250px;
     padding: 10px 0;

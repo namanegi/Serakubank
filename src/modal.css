@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+.modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+}
+.modal-con {
+    position: relative;
+    top: 40vh;
+    left: 40vw;
+    width: 20vw;
+    height: 20vh;
+    background-color: cornsilk;
+}

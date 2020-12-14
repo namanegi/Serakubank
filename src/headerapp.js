@@ -1,4 +1,8 @@
-function HeaderApp() {
+import React from 'react';
+import "./headerapp.css";
+
+class HeaderApp extends React.Component {
+    render() {
     return (
         <div className="headerapp">
             <header id="top">
@@ -23,6 +27,7 @@ function HeaderApp() {
             </header>
         </div>
     );
+    }
 }
 
 export default HeaderApp;

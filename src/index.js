@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './main.css';
 import HeaderApp from './headerapp';
+import ModalApp from './modalapp'
 import reportWebVitals from './reportWebVitals';
 
 var menudata = require('./menudata.json');
@@ -191,7 +192,7 @@ class SideApp extends React.Component {
             <a className="abox" href="/acntguide" id="toacntguide">口座開設のご案内</a>
             <a className="abox" href="/news" id="tonews">金融経済ニュース</a>
             <a className="abox" href="/safety" id="tosafe">詐欺に注意！！</a>
-            <a className="abox" href="/cm" id="tocm">テレビCM・動画のご紹介</a>
+            <ModalApp value={"テレビCM・動画のご紹介"} />
             <a className="abox" href="/loan" id="toloan">今から考える教育ローン</a>
             <a href="/caution" id="tocaution"><img src="./caution.png" id="cautionimg" alt=""></img></a>
         </div>

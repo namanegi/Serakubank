@@ -13,6 +13,27 @@ $(function() {
         $(this).hide();
         $(this).prev().css('background-color',  'rgb(38,45,123)');
     });
+    $('.submega').find('li').hover(function() {
+        $data = {
+            "普通預金": "セラク銀行の普通預金（口座）に関する便利・おトクな使い方をご案内します。本支店ATMでは手数料0円でお引き出し可能。セラク銀行あての振込はインターネットバンキングで手数料0円。インターネットバンキングはワンタイムパスワードで安全にお取引。", 
+            "定期預金・積立": "定期預金・積立の案内",
+            "外貨預金": "外貨預金の案内",
+            "外債": "外債の案内",
+            "ファンドラップ": "ファンドラップの案内",
+            "個人向け国債": "個人向け国債の案内",
+            "退職金運用のご案内": "退職金運用のご案内の案内"
+        }
+        $s_key = $(this).text();
+        if ($data[$s_key] !== undefined) {
+            $s_con = $data[$s_key];
+        } else {
+            $s_con = $s_key + "の案内はまだ実装しておりません。";
+        };
+        $('.megacon').css("display", "inline-flex");
+        $('.megacon').find('p').text($s_con);
+    }, function() {
+        $('.megacon').hide();
+    })
 
     $('#js-small').click(function() {
         $('body').css("font-size", "14px");
