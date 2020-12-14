@@ -1,0 +1,82 @@
+@charset "utf-8";
+#navroot {
+  height: auto;
+}
+#navapp {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  background-color: rgba(38,45,123,1);
+  position: relative;
+}
+.nav-btn {
+  display: inline-block;
+  width: 19.9%;
+  position: relative;
+  height: 3.4em;
+  padding: 0;
+  margin: 0;
+  border-left: white 1px solid;
+}
+
+.nav-btn:hover {
+  background-color:  rgb(54, 155, 158);
+}
+.nav-btn h1 {
+  text-align: center;
+  color: aliceblue;
+  font-size: 1.167em;
+  margin: 0;
+  padding: 0.8em 0;
+}
+#nav1 {
+  border: none;
+}
+.megamenu {
+  color: aliceblue;
+  width: 100%;
+  height: 21em;
+  position: absolute;
+  top: 3.4em;
+  background-color:rgb(54, 155, 158);
+  display: none;
+  z-index: 5;
+  transition: 0.1s;
+}
+.submega {
+  display: inline-flex;
+  width: 250px;
+  height: auto;
+  margin: 0;
+}
+.submega ul {
+  display: block;
+  width: 250px;
+  margin: 0;
+  margin-top: 0.2em;
+  padding: 0;
+  border-right: azure 2px solid;
+}
+.submega li {
+  display: block;
+  padding: 10px 0 10px 2em;
+  font-size: 1em;
+}
+.submega li:hover {
+  background-color: rgb(38,45,123);
+}
+.megacon {
+  margin: 0;
+  margin-top: 0.2em;
+  display: inline-flex;
+  width: 748px;
+  background-color:rgb(38,45,123);
+  height: 20.8em;
+  padding: 0;
+  display: none;
+}
+.megacon p {
+  font-size: 1em;
+  padding: 10px 0;
+  margin: 0;
+}

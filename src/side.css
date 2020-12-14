@@ -1,0 +1,116 @@
+@charset "utf-8";
+#sidebar {
+  float:  left;
+  margin-left: 0;
+  position: relative;
+  width: 300px;
+}
+#netbank {
+  width: 250px;
+  height: auto;
+  margin: 25px;
+  text-align: center;
+}
+#sidebar h2 {
+  display: block;
+  color: rgba(38,45,123);
+  font-size: 1.3em;
+  font-weight: bolder;
+  margin: 10px;
+}
+#netbank p {
+  color: black;
+  font-size: 0.8em;
+  margin: 5px auto;
+}
+.abox {
+  display: inline-block;
+  width: 250px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: seashell;
+  text-decoration: none;
+  background-color: rgba(38,45,123);
+}
+.bbox {
+  display: inline-block;
+  width: 250px;
+  padding: 12px 0;
+  text-align: center;
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: seashell;
+  text-decoration: none;
+  background-color: rgba(38,45,123);
+}
+.abox:hover {
+  background-color: rgb(0, 60, 255);
+}
+#tosignup {
+  background-color: #8fc31f;
+  margin-bottom: 0;
+}
+#toforget {
+  font-size: 0.583em;
+}
+#guide {
+  text-align: center;
+  margin: 50px 0;
+  display: block;
+}
+#guidelist {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 255px;
+}
+.guidebox {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 85px;
+  height: 85px;
+}
+#guidelist a {
+  display: inline-block;
+  margin: 2.5px;
+  padding: auto;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  background-color: rgba(38,45,123);
+  color: seashell;
+  text-decoration: none;
+  font-size: 0.833em;
+}
+#guidelist a:hover {
+  background-color: rgb(0, 60, 255);
+}
+.half {
+  display: block;
+  content: "";
+  height: 6px;
+}
+#toacntguide {
+  margin-top: 50px;
+}
+#tocm, #toloan {
+  background-color: #8fc31f;
+}
+#tosignup:hover, #tocm:hover, #toloan:hover {
+  background-color: #556e11;
+}
+#tocm {
+  margin-top: 50px;
+}
+#tocaution {
+  display: block;
+  margin: 50px 0;
+}
+#cautionimg {
+  width: 250px;
+}

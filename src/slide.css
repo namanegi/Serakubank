@@ -1,0 +1,38 @@
+@charset "utf-8";
+#slideshow {
+  margin:10px 0 0 0;
+  width: 1000px;
+  display: block;
+}
+.slideimg {
+  margin: 0 20px 0 20px;
+  float: left;
+  width: 900px;
+}
+.slidearrow {
+  margin: 0;
+  float: left;
+  position: relative;
+  width: 30px;
+  height: 45px;
+  top: 126px;
+}
+.slidearrow:hover {
+  background-color: rgb(0, 0, 0,0.08);
+}
+#thumbs {
+  margin: 0;
+  float: left;
+  position: relative;
+  margin: 0;
+  width: 1000px;
+}
+.thumb {
+  position: relative;
+  width: 296px;
+  border: darkblue 1px double;
+  margin: 1px;
+}
+#thumb1 {
+  margin-left: 51px;
+}

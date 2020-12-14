@@ -1,453 +1,122 @@
 @charset "utf-8";
-
-/*--------------for all--------------------------*/
-body {
-	color: #5f5039;
-	font-size: 14px;
-    line-height: 1.5;
-    width: 1000px;
-    margin: auto;
-}
-header, nav, footer {
-    margin: auto;
-    width: 1000px;
-    font-size: 1em;
-}
-html{
-    scroll-behavior: smooth;
-    font-family: "Helvetica Neue",
-    Arial,
-    "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans",
-    Meiryo,
-    sans-serif;
-}
-button {
-    cursor:pointer;
-    border: none;
-}
-
-/*--------nav-------------*/
-#navroot {
-    height: auto;
-}
-#navapp {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    background-color: rgba(38,45,123,1);
-    position: relative;
-}
-.nav-btn {
-    display: inline-block;
-    width: 19.9%;
-    position: relative;
-    height: 3.4em;
-    padding: 0;
-    margin: 0;
-    border-left: white 1px solid;
-}
-
-.nav-btn:hover {
-    background-color:  rgb(54, 155, 158);
-}
-.nav-btn h1 {
-    text-align: center;
-    color: aliceblue;
-    font-size: 1.167em;
-    margin: 0;
-    padding: 0.8em 0;
-}
-#nav1 {
-    border: none;
-}
-.megamenu {
-    color: aliceblue;
-    width: 100%;
-    height: 21em;
-    position: absolute;
-    top: 3.4em;
-    background-color:rgb(54, 155, 158);
-    display: none;
-    z-index: 5;
-    transition: 0.1s;
-}
-.submega {
-    display: inline-flex;
-    width: 250px;
-    height: auto;
-    margin: 0;
-}
-.submega ul {
-    display: block;
-    width: 250px;
-    margin: 0;
-    margin-top: 0.2em;
-    padding: 0;
-    border-right: azure 2px solid;
-}
-.submega li {
-    display: block;
-    padding: 10px 0 10px 2em;
-    font-size: 1em;
-}
-.submega li:hover {
-    background-color: rgb(38,45,123);
-}
-.megacon {
-    margin: 0;
-    margin-top: 0.2em;
-    display: inline-flex;
-    width: 748px;
-    background-color:rgb(38,45,123);
-    height: 20.8em;
-    padding: 0;
-    display: none;
-}
-.megacon p {
-    font-size: 1em;
-    padding: 10px 0;
-    margin: 0;
-}
-/*---slide-------*/
-#slideshow {
-    margin:10px 0 0 0;
-    width: 1000px;
-    display: block;
-}
-.slideimg {
-    margin: 0 20px 0 20px;
-    float: left;
-    width: 900px;
-}
-.slidearrow {
-    margin: 0;
-    float: left;
-    position: relative;
-    width: 30px;
-    height: 45px;
-    top: 126px;
-}
-.slidearrow:hover {
-    background-color: rgb(0, 0, 0,0.08);
-}
-#thumbs {
-    margin: 0;
-    float: left;
-    position: relative;
-    margin: 0;
-    width: 1000px;
-}
-.thumb {
-    position: relative;
-    width: 296px;
-    border: darkblue 1px double;
-    margin: 1px;
-}
-#thumb1 {
-    margin-left: 51px;
-}
-
-/*----------side-------*/
-#sidebar {
-    float:  left;
-    margin-left: 0;
-    position: relative;
-    width: 300px;
-}
-#netbank {
-    width: 250px;
-    height: auto;
-    margin: 25px;
-    text-align: center;
-}
-#sidebar h2 {
-    display: block;
-    color: rgba(38,45,123);
-    font-size: 1.3em;
-    font-weight: bolder;
-    margin: 10px;
-}
-#netbank p {
-    color: black;
-    font-size: 0.8em;
-    margin: 5px auto;
-}
-.abox {
-    display: inline-block;
-    width: 250px;
-    padding: 10px 0;
-    text-align: center;
-    margin: 5px 0;
-    font-size: 0.9em;
-    color: seashell;
-    text-decoration: none;
-    background-color: rgba(38,45,123);
-}
-.bbox {
-    display: inline-block;
-    width: 250px;
-    padding: 12px 0;
-    text-align: center;
-    margin: 5px 0;
-    font-size: 0.9em;
-    color: seashell;
-    text-decoration: none;
-    background-color: rgba(38,45,123);
-}
-.abox:hover {
-    background-color: rgb(0, 60, 255);
-}
-#tosignup {
-    background-color: #8fc31f;
-    margin-bottom: 0;
-}
-#toforget {
-    font-size: 0.583em;
-}
-#guide {
-    text-align: center;
-    margin: 50px 0;
-    display: block;
-}
-#guidelist {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    width: 255px;
-}
-.guidebox {
-    display: inline;
-    margin: 0;
-    padding: 0;
-    float: left;
-    width: 85px;
-    height: 85px;
-}
-#guidelist a {
-    display: inline-block;
-    margin: 2.5px;
-    padding: auto;
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    background-color: rgba(38,45,123);
-    color: seashell;
-    text-decoration: none;
-    font-size: 0.833em;
-}
-#guidelist a:hover {
-    background-color: rgb(0, 60, 255);
-}
-.half {
-    display: block;
-    content: "";
-    height: 6px;
-}
-#toacntguide {
-    margin-top: 50px;
-}
-#tocm, #toloan {
-    background-color: #8fc31f;
-}
-#tocm {
-    margin-top: 50px;
-}
-#tocaution {
-    display: block;
-    margin: 50px 0;
-}
-#cautionimg {
-    width: 250px;
-}
-
-/*---------------main--------*/
 #maincon {
-    float:  left;
-    position: relative;
-    width: 680px;
-    margin-left: 20px;
-    height: 1000px;
+  float:  left;
+  position: relative;
+  width: 680px;
+  margin-left: 20px;
+  height: 1000px;
 }
 #boxes {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    margin: 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin: 0;
 }
 .mainbox {
-    float: left;
-    margin: 20px 5px 10px 5px;
-    width: 330px;
-    height: 140px;
+  float: left;
+  margin: 20px 5px 10px 5px;
+  width: 330px;
+  height: 140px;
 }
 .boxtitle {
-    display: inline-block;
-    width: 100%;
-    height: 40px;
-    background-color: white;
-    border-bottom: turquoise 2px solid;
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  border-bottom: turquoise 2px solid;
 }
 .boxblock {
-    float: left;
-    height: 100%;
-    width: 16px;
-    background-color: turquoise;
+  float: left;
+  height: 100%;
+  width: 16px;
+  background-color: turquoise;
 }
 .boxtitle h1 {
-    display: inline-block;
-    color: rgba(38,45,123);
-    font-size: 1.167em;
-    font-weight: bolder;
-    margin-left: 14px;
-    margin-top: 8px;
+  display: inline-block;
+  color: rgba(38,45,123);
+  font-size: 1.167em;
+  font-weight: bolder;
+  margin-left: 14px;
+  margin-top: 8px;
 }
 .boxcon ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .boxcon ul li {
-    font-size: 0.833em;
-    color: rgba(38,45,123);
-    display: inline-block;
-    width: 145px;
-    margin: 0;
-    margin-left: 10px;
-    padding: 5px;
+  font-size: 0.833em;
+  color: rgba(38,45,123);
+  display: inline-block;
+  width: 145px;
+  margin: 0;
+  margin-left: 10px;
+  padding: 5px;
 }
 #newslist {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    margin: 10px 0 0 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin: 10px 0 0 0;
 }
 #genres {
-    width: 100%;
-    border-bottom: rgba(38,45,123,1) 2px solid;
+  width: 100%;
+  border-bottom: rgba(38,45,123,1) 2px solid;
 }
 .genre {
-    display: inline-block;
-    width: 24.5%;
-    background-color: rgb(0, 0, 0,0.3);
-    margin: 0 0.5% 0 0;
-    padding: 10px 0;
-    text-align: center;
-    color: white;
-    font-weight: bolder;
+  display: inline-block;
+  width: 24.5%;
+  background-color: rgb(0, 0, 0,0.3);
+  margin: 0 0.5% 0 0;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
 }
 #genre4 {
-    margin: 0;
-    width: 25%;
+  margin: 0;
+  width: 25%;
 }
 .genre-focus {
-    background-color: rgba(38,45,123,1);
+  background-color: rgba(38,45,123,1);
 }
 .newscons {
-    width: 100%;
+  width: 100%;
 }
 .newscon {
-    width: 100%;
-    display: inline-block;
-    height: 60px;
+  width: 100%;
+  display: inline-block;
+  height: 60px;
 }
 .newscon h4 {
-    display: inline-block;
-    color: black;
-    font-size: 13px;
-    width: 15%;
-    margin: 20px 0;
-    font-weight: normal;
+  display: inline-block;
+  color: black;
+  font-size: 13px;
+  width: 15%;
+  margin: 20px 0;
+  font-weight: normal;
 }
 .newscon h5 {
-    font-size: 10px;
-    display: inline-block;
-    color: white;
-    width: 13%;
-    text-align: center;
-    margin: 0 1%;
+  font-size: 10px;
+  display: inline-block;
+  color: white;
+  width: 13%;
+  text-align: center;
+  margin: 0 1%;
 }
 .news {
-    background-color: goldenrod;
+  background-color: goldenrod;
 }
 .camp {
-    background-color: tomato;
+  background-color: tomato;
 }
 .notice {
-    background-color: dodgerblue;
+  background-color: dodgerblue;
 }
 .newslink {
-    display: inline-flex;
-    width: 68%;
-    margin: 0;
-    margin-left: 2%;
-    font-size: 1em;
-    height: 60px;
-}
-
-
-
-/*----footer---*/
-#footer {
-    width: 100%;
-    float: left;
-    margin: 0;
-    position: relative;
-    background-color:  rgba(38,45,123,1);
-}
-
-#ftext{
-    width: 1000px;
-    margin: auto;
-}
-
-#footer h1{
-    font-size: 1.2em;
-}
-#footer ul{
-    margin: 5px 5px 15px 25px;
-    padding: 10px;
-    float: left;
-    list-style: circle;
-    width: 150px;
-    text-decoration: underline;
-    font-size: 0.9em;
-    color: gainsboro;
-}
-
-#hai{
-    clear: both;
-    background-color:gainsboro;
-    width: 100%;
-    text-align: center;
-    float: left;
-    position: relative;
-}
-#hai p{
-    float: left;
-    text-align: center;
-    margin: 5px;
-    font-size: 10px;
-}
-#fmoji {
-    display: inline-flex;
-    width: auto;
-    height: auto;
-    position: relative;
-    margin: 0 auto;
-}
-#fu1, #fu2, #fu3, #fu4, #fu5{
-    float: left;
-    color:cadetblue;
-}
-#fa, #fb, #fc, #fd, #fe, #ff{
-    color:dimgrey;
-}
-#copyright {
-    color: gainsboro;
-    text-align: center;
-    width: 100%;
-    margin: auto;
-    clear: both;
-    background-color: rgba(38,45,123);
+  display: inline-flex;
+  width: 68%;
+  margin: 0;
+  margin-left: 2%;
+  font-size: 1em;
+  height: 60px;
 }
