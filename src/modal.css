@@ -11,9 +11,9 @@
 }
 .modal-con {
     position: relative;
-    top: 40vh;
-    left: 40vw;
-    width: 20vw;
-    height: 20vh;
+    top: 20vh;
+    left: 20vw;
+    width: 60vw;
+    height: 60vh;
     background-color: cornsilk;
 }

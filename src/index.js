@@ -95,9 +95,9 @@ class SlideApp extends React.Component {
   }
   render() {
     var opa = {
-      1: 0.4,
-      2: 0.4,
-      3: 0.4
+      1: 0.3,
+      2: 0.3,
+      3: 0.3
     };
     opa[this.state.no]=1;
     return (
