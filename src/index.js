@@ -4,7 +4,8 @@ import './common.css';
 import HeaderApp from './headerapp';
 import NavApp from './navapp';
 import FootApp from "./footer";
-import App from "./App"
+import ToTopApp from "./totopapp";
+import App from "./App";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -12,14 +13,17 @@ ReactDOM.render(
   document.getElementById('headerroot')
 );
 ReactDOM.render(
-  <App />,
-  document.getElementById("content")
-)
-ReactDOM.render(
   <NavApp />,
   document.getElementById('navroot')
 );
-
+ReactDOM.render(
+  <App />,
+  document.getElementById("content")
+);
+ReactDOM.render(
+  <ToTopApp />,
+  document.getElementById('totop')
+);
 ReactDOM.render(
   <FootApp />,
   document.getElementById('footroot')

@@ -2,8 +2,8 @@
 #maincon {
   float:  left;
   position: relative;
-  width: 680px;
-  margin-left: 20px;
+  width: 68%;
+  margin-left: 2%;
   height: 1000px;
 }
 #boxes {
@@ -15,7 +15,7 @@
 .mainbox {
   float: left;
   margin: 20px 5px 10px 5px;
-  width: 330px;
+  width: 48.5%;
   height: 140px;
 }
 .boxtitle {
@@ -47,10 +47,10 @@
   font-size: 0.833em;
   color: rgba(38,45,123);
   display: inline-block;
-  width: 145px;
+  width: 46%;
   margin: 0;
   margin-left: 10px;
-  padding: 5px;
+  padding: 5px 0.2%;
 }
 #newslist {
   display: inline-block;

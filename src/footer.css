@@ -8,7 +8,7 @@
 }
 
 #ftext{
-  width: 1000px;
+  width: 100%;
   margin: auto;
 }
 
@@ -16,11 +16,11 @@
   font-size: 1.2em;
 }
 #footer ul{
-  margin: 5px 5px 15px 25px;
+  margin: 5px 0.5% 15px 2.5%;
   padding: 10px;
   float: left;
   list-style: circle;
-  width: 150px;
+  width: 15%;
   text-decoration: underline;
   font-size: 0.9em;
   color: gainsboro;

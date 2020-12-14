@@ -3,12 +3,13 @@
   float:  left;
   margin-left: 0;
   position: relative;
-  width: 300px;
+  width: 30%;
 }
 #netbank {
-  width: 250px;
+  display: block;
+  width: 83.3%;
   height: auto;
-  margin: 25px;
+  margin: 25px auto;
   text-align: center;
 }
 #sidebar h2 {
@@ -16,16 +17,19 @@
   color: rgba(38,45,123);
   font-size: 1.3em;
   font-weight: bolder;
-  margin: 10px;
+  margin: 10px 0;
 }
 #netbank p {
   color: black;
   font-size: 0.8em;
   margin: 5px auto;
 }
+#netbank a {
+  display: inline-block;
+}
 .abox {
   display: inline-block;
-  width: 250px;
+  width: 83.30%;
   padding: 10px 0;
   text-align: center;
   margin: 5px 0;
@@ -36,7 +40,7 @@
 }
 .bbox {
   display: inline-block;
-  width: 250px;
+  width: 83.30%;
   padding: 12px 0;
   text-align: center;
   margin: 5px 0;
@@ -48,9 +52,13 @@
 .abox:hover {
   background-color: rgb(0, 60, 255);
 }
+#tologin {
+  width: 100%;
+}
 #tosignup {
   background-color: #8fc31f;
   margin-bottom: 0;
+  width: 100%;
 }
 #toforget {
   font-size: 0.583em;

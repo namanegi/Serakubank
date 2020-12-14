@@ -1,10 +1,11 @@
 $(function() {
     $('.nav-btn').hover(function() {
-        $(this).next().slideDown(200);
+        $(this).next().slideDown(400);
         $(this).css('background-color', 'rgb(54, 155, 158)');
     }, function() {
         $(this).next().hide();
         $(this).css('background-color',  'rgb(38,45,123)');
+        $('.megacon').hide();
     });
     $('.megamenu').hover(function() {
         $(this).show();
@@ -12,6 +13,7 @@ $(function() {
     }, function() {
         $(this).hide();
         $(this).prev().css('background-color',  'rgb(38,45,123)');
+        $('.megacon').hide();
     });
     $('.submega').find('li').hover(function() {
         $data = {
@@ -32,16 +34,19 @@ $(function() {
         $('.megacon').css("display", "inline-flex");
         $('.megacon').find('p').text($s_con);
     }, function() {
-        $('.megacon').hide();
+        ;
     })
 
     $('#js-small').click(function() {
         $('body').css("font-size", "14px");
+        $('body').css("width", "1000px");
     });
     $('#js-medium').click(function() {
         $('body').css("font-size", "16px");
+        $('body').css("width", "1100px");
     });
     $('#js-large').click(function() {
         $('body').css("font-size", "18px");
+        $('body').css("width", "1200px");
     });
 })

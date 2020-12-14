@@ -33,7 +33,7 @@ class ModalApp extends React.Component {
                 })
             }}>
               <div className="modal-con">
-                <iframe title="CM" width="100%" height="100%" src="https://www.youtube.com/embed/cIA6d86gAkk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe title="CM" width="100%" height="100%" src="https://www.youtube.com/embed/cIA6d86gAkk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
               </div>
             </div>
             </React.Fragment>
