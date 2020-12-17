@@ -1,44 +1,66 @@
 import React from "react";
+import axios from "axios";
 import SideApp from "./sideapp";
-// ('http://newsapi.org/v2/top-headlines?country=jp&category=business&apiKey=277fa25d2d1d4a6e9e1064972881e2ca');
+const url='http://newsapi.org/v2/top-headlines?country=jp&category=business&apiKey=277fa25d2d1d4a6e9e1064972881e2ca';
+var apinews_data = [];
+var load_comp = false;
+var n=0;
 
-async function getNewsFromAPI() {
-  const NewsAPI = require('newsapi');
-  const newsapi = new NewsAPI('277fa25d2d1d4a6e9e1064972881e2ca');
-  newsapi.v2.topHeadlines({
-    sources: 'bbc-news,the-verge',
-    q: 'bitcoin',
-    category: 'business',
-    language: 'en',
-    country: 'us'
-  }).then(response => {
-    alert('response');
-    return response;
-  });
+function getNewsFromAPI() {
+  axios.get(url).then((res)=>{
+    for (var i in res.data.articles) {
+      var temp = {};
+      temp["title"] = res.data.articles[i].title;
+      temp["author"] = res.data.articles[i].source.name;
+      temp["time"] = res.data.articles[i].publishedAt;
+      temp["description"] = res.data.articles[i].description;
+      temp["url"] = res.data.articles[i].url;
+      temp["urlimg"] = res.data.articles[i].urlToImage;
+      apinews_data.push(temp);
+    }
+    load_comp = true;
+  })
 }
 
 class APINewsWriter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state={
+      loaded: false,
+    }
+  }
+  componentDidMount() {
+    getNewsFromAPI();
+    this.intervalId = setInterval(() => {
+      if (load_comp || n > 10) {
+        this.setState({
+          loaded: true,
+        });
+        clearInterval(this.intervalId);
+        console.log('timer working')
+      }
+      n++;
+    }, 500);
+  }
+  componentWillUnmount() {
+    clearInterval(this.intervalId);
+  }
+
   render() {
-    var api_data = getNewsFromAPI();
-    var list = [];
-    if (api_data.status !== 'ok') {
-      list.push(
-        <h1 key={-1}>Read api ERROR!!!</h1>
-      )
-    }
-    for (var i in api_data.articles) {
-      list.push(
-        <div className="apinews" key={i}>
-          <h1>{api_data.articles[i].title}</h1><br />
-          <h5>{api_data.articles[i].source.name}</h5><h5>{api_data.articles[i].publishedAt}</h5>
-          <h4>{api_data.articles[i].description}</h4>
-        </div>
-      )
-    }
     return (
       <div id="maincon">
-        {api_data.status}
-        {list}
+        {
+          apinews_data.map(item => {
+            return (
+              <div className="apinews" key={item.title}>
+              <h1><a href={item.url}>{item.title}</a></h1>
+              <h5>{item.author} &nbsp;&nbsp;&nbsp;&nbsp; {item.time}</h5>
+              <img className="newsimg" src={item.urlimg} alt=""></img>
+              <h4>{item.description}</h4>
+            </div>
+            )
+          })
+        }
       </div>
     )
   }
