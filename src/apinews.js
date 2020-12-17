@@ -6,24 +6,22 @@ class APINewsWriter extends React.Component {
   constructor(props) {
     super(props);
     this.state={
+      apinews_data: [],
       loaded: false,
+      url: 'https://newsapi.org/v2/top-headlines?country=jp&category=business&apiKey=277fa25d2d1d4a6e9e1064972881e2ca'
     }
-    this.url='https://newsapi.org/v2/top-headlines?country=jp&category=business&apiKey=277fa25d2d1d4a6e9e1064972881e2ca';
-    this.apinews_data = [];
   }
   componentDidMount() {
-    axios.get(this.url).then((res)=>{
-      for (var i in res.data.articles) {
-        var temp = {};
-        temp["title"] = res.data.articles[i].title;
-        temp["author"] = res.data.articles[i].source.name;
-        temp["time"] = res.data.articles[i].publishedAt;
-        temp["description"] = res.data.articles[i].description;
-        temp["url"] = res.data.articles[i].url;
-        temp["urlimg"] = res.data.articles[i].urlToImage;
-        this.apinews_data.push(temp);
-      }
+    axios.get(this.state.url).then((res)=>{
       this.setState({
+        apinews_data: res.data.articles.map(item => ({
+          title: item.title,
+          author: item.source.name,
+          time: item.publishedAt,
+          description: item.description,
+          url: item.url,
+          urlimg: item.urlToImage
+        })),
         loaded: true,
       })
     })
@@ -33,7 +31,7 @@ class APINewsWriter extends React.Component {
     return (
       <div id="maincon">
         {
-          this.apinews_data.map(item => {
+          this.state.apinews_data.map(item => {
             return (
               <div className="apinews" key={item.title}>
               <h1><a href={item.url}>{item.title}</a></h1>
