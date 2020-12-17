@@ -1,26 +1,6 @@
 import React from "react";
 import axios from "axios";
 import SideApp from "./sideapp";
-const url='http://newsapi.org/v2/top-headlines?country=jp&category=business&apiKey=277fa25d2d1d4a6e9e1064972881e2ca';
-var apinews_data = [];
-var load_comp = false;
-var n=0;
-
-function getNewsFromAPI() {
-  axios.get(url).then((res)=>{
-    for (var i in res.data.articles) {
-      var temp = {};
-      temp["title"] = res.data.articles[i].title;
-      temp["author"] = res.data.articles[i].source.name;
-      temp["time"] = res.data.articles[i].publishedAt;
-      temp["description"] = res.data.articles[i].description;
-      temp["url"] = res.data.articles[i].url;
-      temp["urlimg"] = res.data.articles[i].urlToImage;
-      apinews_data.push(temp);
-    }
-    load_comp = true;
-  })
-}
 
 class APINewsWriter extends React.Component {
   constructor(props) {
@@ -28,29 +8,32 @@ class APINewsWriter extends React.Component {
     this.state={
       loaded: false,
     }
+    this.url='https://newsapi.org/v2/top-headlines?country=jp&category=business&apiKey=277fa25d2d1d4a6e9e1064972881e2ca';
+    this.apinews_data = [];
   }
   componentDidMount() {
-    getNewsFromAPI();
-    this.intervalId = setInterval(() => {
-      if (load_comp || n > 10) {
-        this.setState({
-          loaded: true,
-        });
-        clearInterval(this.intervalId);
-        console.log('timer working')
+    axios.get(this.url).then((res)=>{
+      for (var i in res.data.articles) {
+        var temp = {};
+        temp["title"] = res.data.articles[i].title;
+        temp["author"] = res.data.articles[i].source.name;
+        temp["time"] = res.data.articles[i].publishedAt;
+        temp["description"] = res.data.articles[i].description;
+        temp["url"] = res.data.articles[i].url;
+        temp["urlimg"] = res.data.articles[i].urlToImage;
+        this.apinews_data.push(temp);
       }
-      n++;
-    }, 500);
-  }
-  componentWillUnmount() {
-    clearInterval(this.intervalId);
+      this.setState({
+        loaded: true,
+      })
+    })
   }
 
   render() {
     return (
       <div id="maincon">
         {
-          apinews_data.map(item => {
+          this.apinews_data.map(item => {
             return (
               <div className="apinews" key={item.title}>
               <h1><a href={item.url}>{item.title}</a></h1>
