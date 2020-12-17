@@ -48,6 +48,10 @@
   height: auto;
   margin: 0;
 }
+.submega a {
+  text-decoration: none;
+  color: aliceblue;
+}
 .submega ul {
   display: block;
   width: 100%;

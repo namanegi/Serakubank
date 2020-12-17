@@ -3,6 +3,7 @@ import React from 'react';
 import SlideApp from './slideapp';
 import SideApp from "./sideapp";
 import MainApp from "./mainapp";
+import IntroWriter from './introwriter';
 
 import LoginApp from "./loginapp";
 import {
@@ -32,6 +33,8 @@ class App extends React.Component {
           </Route>
           <Route path="/login">
             <LoginApp />
+          </Route>
+          <Route path='/:id' children={<IntroWriter />}>
           </Route>
         </Switch>
       </Router>

@@ -25,7 +25,9 @@
   font-size: 0.9em;
   color: gainsboro;
 }
-
+#footer a {
+  color: gainsboro;
+}
 #hai{
   clear: both;
   background-color:gainsboro;

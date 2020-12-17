@@ -40,13 +40,16 @@ $(function() {
     $('#js-small').click(function() {
         $('body').css("font-size", "14px");
         $('body').css("width", "1000px");
+        $('#logo').css("width", "500px");
     });
     $('#js-medium').click(function() {
         $('body').css("font-size", "16px");
         $('body').css("width", "1100px");
+        $('#logo').css("width", "600px");
     });
     $('#js-large').click(function() {
         $('body').css("font-size", "18px");
         $('body').css("width", "1200px");
+        $('#logo').css("width", "700px");
     });
 })

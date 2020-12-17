@@ -4,7 +4,7 @@ class ContentWriter extends React.Component {
   render() {
     var list = [];
     for (var j in menudata["Menu"+this.props.val].Contents) {
-      list.push(<li key={j} >{menudata["Menu"+this.props.val].Contents[j]}</li>);
+      list.push(<a href={"/i" + this.props.val + j}><li key={j} >{menudata["Menu"+this.props.val].Contents[j]}</li></a>);
     };
     return list
   }
