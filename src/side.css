@@ -29,7 +29,7 @@
 }
 .abox {
   display: inline-block;
-  width: 83.30%;
+  width: 83.33%;
   padding: 10px 0;
   text-align: center;
   margin: 5px 0;
@@ -40,7 +40,7 @@
 }
 .bbox {
   display: inline-block;
-  width: 83.30%;
+  width: 83.33%;
   padding: 12px 0;
   text-align: center;
   margin: 5px 0;
@@ -70,25 +70,22 @@
 }
 #guidelist {
   display: inline-block;
-  padding: 0;
-  margin: 0;
   text-align: center;
-  width: 255px;
+  margin: 0 auto;
+  width: 90%;
 }
 .guidebox {
   display: inline;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   float: left;
-  width: 85px;
-  height: 85px;
 }
 #guidelist a {
   display: inline-block;
-  margin: 2.5px;
+  margin: 0.1em;
   padding: auto;
-  width: 80px;
-  height: 80px;
+  width: 7.52em;
+  height: 7.52em;
   text-align: center;
   background-color: rgba(38,45,123);
   color: seashell;
@@ -101,7 +98,7 @@
 .half {
   display: block;
   content: "";
-  height: 6px;
+  height: 0.4em;
 }
 #toacntguide {
   margin-top: 50px;
