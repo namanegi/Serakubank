@@ -1,13 +1,13 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-import SlideApp from './slideapp';
 import SideApp from "./sideapp";
 
 var introdata = require('./introduction.json');
 
 function IntroWriter() {
   let { id } = useParams();
+  id = 'i' + id;
   let list = [];
   try {
     list.push(
@@ -26,7 +26,6 @@ function IntroWriter() {
   
   return (
     <React.Fragment>
-    <SlideApp />
     <SideApp />
     <div id="maincon">
       {list}

@@ -11,6 +11,8 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
+import MapApp from './mapapp';
+import APINews from './apinews';
 
 class Index extends React.Component {
   render() {
@@ -34,7 +36,13 @@ class App extends React.Component {
           <Route path="/login">
             <LoginApp />
           </Route>
-          <Route path='/:id' children={<IntroWriter />}>
+          <Route path='/c1'>
+            <MapApp />
+          </Route>
+          <Route path='/apinews'>
+            <APINews />
+          </Route>
+          <Route path='/i:id' children={<IntroWriter />}>
           </Route>
         </Switch>
       </Router>

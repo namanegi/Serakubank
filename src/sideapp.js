@@ -23,7 +23,7 @@ class SideApp extends React.Component {
               <div className="guidebox"><a href="/c6"><br className="half"/><br/>投資信託基準<br/>価格一覧</a></div>
             </div>
             <a className="abox" href="/acntguide" id="toacntguide">口座開設のご案内</a>
-            <a className="abox" href="/news" id="tonews">金融経済ニュース</a>
+            <a className="abox" href="/apinews" id="tonews">金融経済ニュース</a>
             <a className="abox" href="/safety" id="tosafe">詐欺に注意！！</a>
             <ModalApp value={"テレビCM・動画のご紹介"} />
             <a className="abox" href="/loan" id="toloan">今から考える教育ローン</a>
