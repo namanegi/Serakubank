@@ -14,36 +14,36 @@ import {
 import MapApp from './mapapp';
 import APINews from './apinews';
 
-class Index extends React.Component {
-  render() {
-    return (
-      <React.Fragment>
-        <SlideApp />
-        <SideApp />
-        <MainApp />
-      </React.Fragment>
-    )
-  }
-}
 class App extends React.Component {
   render() {
     return (
       <Router>
         <Switch>
           <Route path="/" exact>
-            <Index />
+            <SlideApp />
+            <SideApp />
+            <MainApp />
           </Route>
+
           <Route path="/login">
             <LoginApp />
           </Route>
+
           <Route path='/c1'>
+            <SideApp />
             <MapApp />
           </Route>
+
           <Route path='/apinews'>
+            <SideApp />
             <APINews />
           </Route>
+
           <Route path='/i:id' children={<IntroWriter />}>
+            <SideApp />
+            <IntroWriter />
           </Route>
+
         </Switch>
       </Router>
     )

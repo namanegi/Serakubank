@@ -1,6 +1,5 @@
 import React from "react";
 import axios from "axios";
-import SideApp from "./sideapp";
 
 class APINewsWriter extends React.Component {
   constructor(props) {
@@ -50,10 +49,7 @@ class APINewsWriter extends React.Component {
 class APINews extends React.Component {
   render() {
     return (
-      <React.Fragment>
-        <SideApp />
-        <APINewsWriter />
-      </React.Fragment>
+      <APINewsWriter />
     )
   }
 }

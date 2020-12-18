@@ -19,8 +19,8 @@ class FootApp extends React.Component {
         <div id="ftext">
           {list}
         </div>
-    <div id="hai">
-        <div id="fmoji">
+        <div id="hai">
+          <div id="fmoji">
             <p id="fa">|</p>
             <p id="fu1">お客様の個人情報所得について</p>
             <p id="fb">|</p>
@@ -32,11 +32,11 @@ class FootApp extends React.Component {
             <p id="fe">|</p>
             <p id="fu5">反社会的勢力に対する基本方針</p>
             <p id="ff">|</p>
+          </div>
         </div>
-    </div>
-    <p id="copyright">
-        <small>Copyright(c)2020 Seraku Banking Corporation. ALL rights reserved.</small>
-    </p>
+        <p id="copyright">
+          <small>Copyright(c)2020 Seraku Banking Corporation. ALL rights reserved.</small>
+        </p>
       </div>
     )
   }

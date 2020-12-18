@@ -77,7 +77,6 @@ class SlideApp extends React.Component {
             }
           }}
           alt="" 
-          style={{opacity: opa[2] }}
         />
         <div id="thumbs">
           <img className="thumb" id="thumb1" src="./main01_thumb.png" alt="" onClick={()=>{

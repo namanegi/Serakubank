@@ -1,8 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-import SideApp from "./sideapp";
-
 var introdata = require('./introduction.json');
 
 function IntroWriter() {
@@ -25,16 +23,12 @@ function IntroWriter() {
   }
   
   return (
-    <React.Fragment>
-    <SideApp />
     <div id="maincon">
       {list}
       <div>
         <a href="/">ホームページに戻る</a>
       </div>
     </div>
-  </React.Fragment>
-    
   )
 }
 
