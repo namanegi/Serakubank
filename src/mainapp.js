@@ -40,6 +40,7 @@ class NewsApp extends React.Component {
       val: "all",
     }
   }
+  //タブとthis.state.valが一致する場合にgenre-focusというclassを追加する
   checkFocus(i) {
     if ((i === 1) && (this.state.val === "all")) {
       return "genre genre-focus"
@@ -53,6 +54,7 @@ class NewsApp extends React.Component {
       return "genre"
     }
   }
+  //ニュースリストのジャンルアイコンを作成する
   genreWriter(genre) {
     if (genre === "news") {
       return <h5 className="news">ニュースリリース</h5>
@@ -64,6 +66,7 @@ class NewsApp extends React.Component {
       return <h5>error</h5>
     }
   }
+  //お知らせリストの内容を出力
   newsWriter() {
     var list = [];
     for (var i=1;i<=Object.keys(newsdata).length;i++) {
