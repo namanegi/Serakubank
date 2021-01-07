@@ -9,7 +9,7 @@ function IntroWriter() {
   let list = [];
   try {
     list.push(
-      <h1>{introdata[id].Title + "についての説明"}</h1>
+      <h1 key="title">{introdata[id].Title + "についての説明"}</h1>
     );
     for (var i in introdata[id].Intro) {
       list.push(
@@ -18,7 +18,7 @@ function IntroWriter() {
     }
   } catch {
     list.push(
-      <h1>このコンテンツはまだ実装されておりません。</h1>
+      <h1 key="un404">このコンテンツはまだ実装されておりません。</h1>
     )
   }
   
