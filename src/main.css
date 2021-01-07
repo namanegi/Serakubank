@@ -132,12 +132,30 @@
   margin: 10px 0;
 }
 .apinews h1 {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  margin: 5px;
+}
+.apinews h4 {
+  font-size: 1em;
+  margin: 5px;
+  font-weight: initial;
+}
+.apinews h5 {
+  margin: 0 5px;
+  font-size: 0.6em;
+  font-weight: unset;
 }
 .apinews a {
   color: unset;
 }
+.newsimgdiv {
+  width: 22%;
+  display: inline-block;
+}
+.newstextdiv {
+  display: inline-block;
+  width: 75%;
+}
 .newsimg {
-  display: block;
-  height: 150px;
+  width: 100%;
 }

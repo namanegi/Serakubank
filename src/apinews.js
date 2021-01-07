@@ -29,18 +29,26 @@ class APINewsWriter extends React.Component {
   render() {
     return (
       <div id="maincon">
+        <h1>金融経済最新情報一覧</h1>
         {
           this.state.apinews_data.map(item => {
             return (
               <div className="apinews" key={item.title}>
-              <h1><a href={item.url}>{item.title}</a></h1>
-              <h5>{item.author} &nbsp;&nbsp;&nbsp;&nbsp; {item.time}</h5>
-              <img className="newsimg" src={item.urlimg} alt=""></img>
-              <h4>{item.description}</h4>
-            </div>
+                <div className="newsimgdiv">
+                  <img className="newsimg" src={item.urlimg} alt=""></img>
+                </div>
+                <div className="newstextdiv">
+                  <h1><a href={item.url}>{item.title}</a></h1>
+                  <h5>{item.author} &nbsp;&nbsp;&nbsp;&nbsp; {item.time}</h5>
+                  <h4>{item.description}</h4>
+                </div>
+              </div>
             )
           })
         }
+        <div>
+        <a href="/">ホームページに戻る</a>
+        </div>
       </div>
     )
   }
