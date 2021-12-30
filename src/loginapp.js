@@ -19,7 +19,7 @@ class LoginApp extends React.Component {
             <td colSpan="3"><button type="submit">ログイン</button></td>
           </tr>
           <tr>
-            <td colSpan="3"><a href="/forget" id="toforget">＞パスワードを忘れた方はこちら</a></td>
+            <td colSpan="3"><a href="/serakubank.build.io/forget" id="toforget">＞パスワードを忘れた方はこちら</a></td>
           </tr>
         </table>
       </form>

@@ -26,7 +26,7 @@ function IntroWriter() {
     <div id="maincon">
       {list}
       <div>
-        <a href="/">ホームページに戻る</a>
+        <a href="/serakubank.build.io">ホームページに戻る</a>
       </div>
     </div>
   )

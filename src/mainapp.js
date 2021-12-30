@@ -75,7 +75,7 @@ class NewsApp extends React.Component {
           <div className="newscon" key={"newscon"+i}>
             <h4>{newsdata["news"+i].time}</h4>
             {this.genreWriter(newsdata["news"+i].genre)}
-            <div className="newslink"><a href="/news">{newsdata["news"+i].content}</a></div>
+            <div className="newslink"><a href="/serakubank.build.io/news">{newsdata["news"+i].content}</a></div>
           </div>
         )
       }

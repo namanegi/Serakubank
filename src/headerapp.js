@@ -6,7 +6,7 @@ class HeaderApp extends React.Component {
     return (
         <div className="headerapp">
             <header id="top">
-                <div id="logo"><a href="/"><img id="logo-img" src="./logo.png" alt="" /></a></div>
+                <div id="logo"><a href="/serakubank.build.io"><img id="logo-img" src="./logo.png" alt="" /></a></div>
                 <div id="code">金融機関コード：0917</div>
                 <div id="mojisize">文字サイズ：</div>
                 <div className="ch-moji-size"><img id="js-small" src="./fontsize_s.png" alt="" /></div>
@@ -14,8 +14,8 @@ class HeaderApp extends React.Component {
                 <div className="ch-moji-size"><img id="js-large" src="./fontsize_l.png" alt="" /></div>
                 <div id="map">
                     <ul>
-                        <li><a href="/">global site</a></li>
-                        <li><a href="/">site map</a></li>
+                        <li><a href="/serakubank.build.io">global site</a></li>
+                        <li><a href="/serakubank.build.io">site map</a></li>
                     </ul>
                 </div>
                 <div id="search-bar">

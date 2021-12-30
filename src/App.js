@@ -20,27 +20,27 @@ class App extends React.Component {
     return (
       <Router>
         <Switch>
-          <Route path="/" exact>
+          <Route path="/serakubank.build.io" exact>
             <SlideApp />
             <SideApp />
             <MainApp />
           </Route>
 
-          <Route path="/login">
+          <Route path="/serakubank.build.io/login">
             <LoginApp />
           </Route>
 
-          <Route path='/i:id' children={<IntroWriter />}>
+          <Route path='/serakubank.build.io/i:id' children={<IntroWriter />}>
             <SideApp />
             <IntroWriter />
           </Route>
 
-          <Route path='/c1'>
+          <Route path='/serakubank.build.io/c1'>
             <SideApp />
             <MapApp />
           </Route>
 
-          <Route path='/apinews'>
+          <Route path='/serakubank.build.io/apinews'>
             <SideApp />
             <APINews />
           </Route>
